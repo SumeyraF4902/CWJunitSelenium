@@ -1,0 +1,34 @@
+Gerekli kütüphaneleri içe aktarın
+from selenium import webdriver
+from faker import Faker
+
+# Web sürücüsünü ayarlayın ve website'ye gidin
+driver = webdriver.Chrome()
+driver.get("https://opensource-demo.orangehrmlive.com/")
+
+
+# PIM sekmesine gidin ve "Çalışan Listesi" düğmesine tıklayın
+driver.find_element_by_id("menu_pim_viewPimModule").click()
+driver.find_element_by_id("menu_pim_viewEmployeeList").click()
+
+# Faker kullanarak sahte veri oluşturun
+fake = Faker()
+employee_name = fake.name()
+employee_id = fake.random_number()
+supervisor_name = fake.name()
+
+# Form elemanlarını bulun ve oluşturulan sahte verilerle doldurun
+employee_name_field = driver.find_element_by_id("empsearch_employee_name_empName")
+employee_id_field = driver.find_element_by_id("empsearch_id")
+supervisor_name_field = driver.find_element_by_id("empsearch_supervisor_name")
+
+employee_name_field.send_keys(employee_name)
+employee_id_field.send_keys(employee_id)
+supervisor_name_field.send_keys(supervisor_name)
+
+# "İstihdam Durumu" ve "Dahil Et" açılır menülerini, sırasıyla dizine göre ve görünen metine göre seçin
+driver.find_element_by_id("empsearch_employment_status").find_elements_by_tag_name("option")[2].click()
+driver.find_element_by_id("empsearch_include_current").find_elements_by_tag_name("option")[3].click()
+
+# "İş Unvanı" ve "Alt Birim" açılır menülerini değere göre seçin
+driver.find_element_by_id("empsearch_job_title").find

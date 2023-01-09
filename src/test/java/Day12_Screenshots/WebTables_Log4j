@@ -1,0 +1,68 @@
+WEB TABLES
+
+Web Tables, verilerin satırlar ve   sütunlar kullanılarak yapılandırılmıs bir biçimde sunulduğu normal
+tablolar gibidir. Tek fark, web  üzerinde HTML kodu yardımıyla   görüntülenmeleridir.
+<table> , bir web tablosunu  tanımlamak için kullanılan HTML  etiketidir. Tablonun başlığını
+tanımlamak için <th> kullanılırken ,  web tablosu için sırasıyla satırları  ve sütunları tanımlamak
+için <tr> ve <td> etiketleri  kullanılır
+HTML tablo farklı şekillerde
+oluşturulabilir ama genellikle
+<table> : table
+<thead> : table header
+<tbody> : table body
+<tr> : table row
+<th> : table header data
+<td> : table data-cell
+attribute’leri kullanılır.
+table//tbody//tr → tbody içindeki tüm satırları döndürür.
+table//tbody//tr[1] → tbody'deki ilk satırı döndürür.
+table//tbody//tr[1]//td → İlk satırdaki tüm tablo hücrelerini döndürür.
+table//tbody//tr[1]//td[4] → tbody'deki ilk satırdaki 4. hücreyi döndürür.
+table//tbody//tr[4]//td[5] → 4. satır 5. sütun
+table//tbody//tr[10]//td[2] → Satır 10 data 2
+table//tbody//tr//td[5] → 5. sütundaki tüm satırları döndürür
+
+// tablolarda by.xpath uzerinden arama yapariz
+elemen uzerinden calısiriz once satiri buldugumuzda ikinci adımda ".//[sutunnumarasi]"
+
+
+                                          LOG4j (logforji)
+Java ile yazılmış hızlı, esnek ve güvenilir bir günlük kaydı çerçevesidir.
+• Genel bir ifade ile loglama, bir uygulamanın RunTime’daki durumunu sistematik, kontrol edilebilir,
+okunabilir şekilde saklama yöntemidir.
+• Log4j ile Selenium Otomasyonumuzun akış detaylarını bir dosyada veya veri tabanlarında saklamak
+mümkündür.
+• Log4j hem büyük hem de küçük projeler için kullanılır.
+
+Loglama Dezavantajlar
+• Sistematik bir yapı kurmak
+• Ekstra kod yazmak
+• Kontrol etmek
+• Bakım
+
+Loglama Avantajlar
+• Hızlı hata ayıklama
+• Geçmiş
+• Kontrol edilebilirlik
+
+Loggers: Bilgilerin loglanmasından sorumludur. Logger Class, Log4j'yi kullanmak için halihazırda uygulanmış
+tüm genel yöntemlere sahip Java tabanlı bir yardımcı programdır.
+Define the Log4j Level
+All – Günlük kaydı düzeyip her şeyi günlüğe kaydeder. (Tüm günlükleri açar)
+DEBUG – Hata ayıklama bilgilerini yazdırır ve geliştirme aşamasında yardımcı olur.
+INFO – Uygulamanın ilerleyişini vurgulayan bilgi mesajı yazdırır.
+WARN – Hatalı ve beklenmeyen sistem davranışıyla ilgili bilgileri yazdırır.
+ERROR – Sistemin devam etmesine izin verebilecek bir hata mesajı yazdırır.
+FATAL – Uygulamanın çökmesine neden olan sistemin kritik bilgilerini yazdırır.
+OFF – Kayıt yok.
+
+Appenders: Log Event'leri hedeflerine ulaştırmak için kullanılır. Günlük bilgileriyle ne olacağına karar verir.
+Basit bir deyişle, günlükleri dosyaya yazmak için kullanılır.
+Birkaç tür appender(ekleyici);
+1) Console Appender logs to standard output
+2) File Appender prints logs to some file
+3) Rolling File Appender to a file with maximum size
+NOT: Log4j özelliklerinde herhangi bir adla appender çağırabilir, ayrıca başka tür appenderlar’da mevcuttur.
+Layouts: Günlük bilgilerinin farklı stillerde biçimlendirilmesinden sorumludur.
+Logger Class, günlüğe kaydetme etkinliklerini işlemek için farklı yöntemler sağlar. Bir logger nesnesi elde
+etmek için iki statik yöntem sağlar.

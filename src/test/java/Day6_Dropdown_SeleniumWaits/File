@@ -1,0 +1,21 @@
+ALERT
+secilmesi gereken kutucuk
+
+***** INTERWEV SORUSU KAC TİP ALERT VARDIR  VE BUNLARI NASIL HANDLE EDERSINIZ
+ 2 TANEDİR HTML VE JAVASCRİPT TİR
+ birbirinden ayiran temel fark ;
+  1-alert cıktıgında sag click yapabiliyorsak yani incele
+  kismi aciliyorsa bu HTML Alert tür. WebElement olüstürarak locate edbiliriz
+  2-alert cıktıgında sag click yapamiyorsak yani incele
+    kismi acilmiyorsa bu JAVA ScriptAlert tür. swichto küllanarak handle ediyorüz
+
+
+    DROPDOWN
+    UC ASAMADA HANDLE EDILIR
+    1.ADIM DROPDOWN LOCATE EDILIR
+    2.ADIM SELECT KULLANARAK OBJE OLUSTUR PARAMETRE OLARAK (LOCATE ETTIGIMIZ WEBELEMENT ISMINI GIRERIZ)
+    3.SELECT OBJESI KULLANARAK ISTEDIGIMIZ I SECERIZ
+
+        //selectByIndex() methodu 0 ile baslar
+        // selectByValue() metodu option elementlerinin value attribute unun degerine gore secim yapar.
+        //getFirstSelectedOption() metodu secili olan ilk option elementini bize verir. (Sectigimiz ilk option degil !!!)

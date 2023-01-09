@@ -1,0 +1,126 @@
+2022-12-28 22:11:13 INFO  C01_Log4jDemo:17 - info mesaji
+2022-12-28 22:11:13 WARN  C01_Log4jDemo:18 - warn mesaji
+2022-12-28 22:11:13 ERROR C01_Log4jDemo:19 - error mesaji
+2022-12-28 22:11:13 FATAL C01_Log4jDemo:20 - Fatal mesaji
+2022-12-28 22:13:33 INFO  C01_Log4jDemo:17 - info mesaji
+2022-12-28 22:13:33 WARN  C01_Log4jDemo:18 - warn mesaji
+2022-12-28 22:13:33 ERROR C01_Log4jDemo:19 - error mesaji
+2022-12-28 22:13:33 FATAL C01_Log4jDemo:20 - Fatal mesaji
+2022-12-29 14:32:02 INFO  Odev1:33 - URL ye gidiliyor
+2022-12-29 14:32:09 INFO  Odev1:36 - Entring weight
+2022-12-29 14:34:30 INFO  Odev1:33 - URL ye gidiliyor
+2022-12-29 14:34:34 INFO  Odev1:36 - Entring weight
+2022-12-29 14:37:23 INFO  Odev1:33 - URL ye gidiliyor
+2022-12-29 14:37:27 INFO  Odev1:36 - Entring weight
+2022-12-29 14:38:00 INFO  Odev1:33 - URL ye gidiliyor
+2022-12-29 14:38:05 INFO  Odev1:36 - Entring weight
+2022-12-29 14:38:51 INFO  Odev1:33 - URL ye gidiliyor
+2022-12-29 14:38:56 INFO  Odev1:36 - Entring weight
+2022-12-29 14:38:56 INFO  Odev1:40 - Selecting kilograms
+2022-12-29 14:38:56 INFO  Odev1:45 - Selecting height in feet
+2022-12-29 14:38:57 INFO  Odev1:50 - Selecting height in inchs
+2022-12-29 14:38:57 INFO  Odev1:55 - Clicking on calculate
+2022-12-29 14:38:58 INFO  Odev1:61 - Testimiz gecerli
+2022-12-29 14:38:58 ERROR Odev1:62 - Testimiz gecersiz
+2022-12-29 14:38:58 INFO  Odev1:64 - sonuc getiriliyor
+2022-12-29 14:38:58 INFO  Odev1:67 - Testimiz gecerli
+2022-12-29 14:38:58 ERROR Odev1:68 - Testimiz gecersiz
+2022-12-29 14:38:58 INFO  Odev1:70 - sonuc getiriliyor
+2022-12-29 14:38:58 INFO  Odev1:73 - Testimiz gecerli
+2022-12-29 14:38:58 ERROR Odev1:74 - Testimiz gecersiz
+2022-12-29 14:38:58 INFO  Odev1:76 - sonuc getiriliyor
+2022-12-29 14:38:58 INFO  Odev1:79 - Testimiz gecerli
+2022-12-29 14:38:58 ERROR Odev1:80 - Testimiz gecersiz
+2022-12-29 14:44:48 INFO  Odev1:33 - URL ye gidiliyor
+2022-12-29 14:44:52 INFO  Odev1:36 - Entring weight
+2022-12-29 14:44:52 INFO  Odev1:40 - Selecting kilograms
+2022-12-29 14:44:52 INFO  Odev1:45 - Selecting height in feet
+2022-12-29 14:44:53 INFO  Odev1:50 - Selecting height in inchs
+2022-12-29 14:44:53 INFO  Odev1:55 - Clicking on calculate
+2022-12-29 14:44:53 INFO  Odev1:59 - Sonuc getiriliyor
+2022-12-29 14:44:53 INFO  Odev1:62 - Testimiz gecerli
+2022-12-29 14:44:53 ERROR Odev1:63 - Testimiz gecersiz
+2022-12-29 14:44:53 INFO  Odev1:65 - sonuc getiriliyor
+2022-12-29 14:44:54 INFO  Odev1:68 - Testimiz gecerli
+2022-12-29 14:44:54 ERROR Odev1:69 - Testimiz gecersiz
+2022-12-29 14:44:54 INFO  Odev1:71 - sonuc getiriliyor
+2022-12-29 14:44:54 INFO  Odev1:74 - Testimiz gecerli
+2022-12-29 14:44:54 ERROR Odev1:75 - Testimiz gecersiz
+2022-12-29 14:44:54 INFO  Odev1:77 - sonuc getiriliyor
+2022-12-29 14:44:54 INFO  Odev1:80 - Testimiz gecerli
+2022-12-29 14:44:54 ERROR Odev1:81 - Testimiz gecersiz
+2022-12-29 14:50:18 INFO  Odev1:33 - URL ye gidiliyor
+2022-12-29 14:50:23 INFO  Odev1:36 - Entring weight
+2022-12-29 14:50:23 INFO  Odev1:40 - Selecting kilograms
+2022-12-29 14:50:23 INFO  Odev1:45 - Selecting height in feet
+2022-12-29 14:50:24 INFO  Odev1:50 - Selecting height in inchs
+2022-12-29 14:50:24 INFO  Odev1:55 - Clicking on calculate
+2022-12-29 14:50:24 INFO  Odev1:59 - Sonuc getiriliyor
+2022-12-29 14:50:24 INFO  Odev1:62 - Testimiz gecerli
+2022-12-29 14:50:24 ERROR Odev1:63 - Testimiz gecersiz
+2022-12-29 14:50:24 INFO  Odev1:65 - sonuc getiriliyor
+2022-12-29 14:50:24 INFO  Odev1:68 - Testimiz gecerli
+2022-12-29 14:50:24 ERROR Odev1:69 - Testimiz gecersiz
+2022-12-29 14:50:24 INFO  Odev1:71 - sonuc getiriliyor
+2022-12-29 14:50:25 INFO  Odev1:74 - Testimiz gecerli
+2022-12-29 14:50:25 ERROR Odev1:75 - Testimiz gecersiz
+2022-12-29 14:50:25 INFO  Odev1:77 - sonuc getiriliyor
+2022-12-29 14:50:25 INFO  Odev1:80 - Testimiz gecerli
+2022-12-29 14:50:25 ERROR Odev1:81 - Testimiz gecersiz
+2022-12-29 14:50:25 INFO  Odev1:85 - Testimiz gecerli
+2022-12-29 14:50:25 ERROR Odev1:86 - Testimiz gecersiz
+2022-12-29 15:49:14 INFO  C01_Log4jDemo:17 - info mesaji
+2022-12-29 15:49:14 WARN  C01_Log4jDemo:18 - warn mesaji
+2022-12-29 15:49:14 ERROR C01_Log4jDemo:19 - error mesaji
+2022-12-29 15:49:14 FATAL C01_Log4jDemo:20 - Fatal mesaji
+2022-12-29 15:49:53 INFO  Odev1:40 - URL ye gidiliyor
+2022-12-29 15:49:58 INFO  Odev1:43 - Entring weight
+2022-12-29 15:49:58 INFO  Odev1:47 - Selecting kilograms
+2022-12-29 15:49:58 INFO  Odev1:52 - Selecting height in feet
+2022-12-29 15:49:59 INFO  Odev1:57 - Selecting height in inchs
+2022-12-29 15:49:59 INFO  Odev1:62 - Clicking on calculate
+2022-12-29 15:49:59 INFO  Odev1:66 - Sonuc getiriliyor
+2022-12-29 15:49:59 INFO  Odev1:69 - Testimiz gecerli
+2022-12-29 15:49:59 ERROR Odev1:70 - Testimiz gecersiz
+2022-12-29 15:49:59 INFO  Odev1:72 - sonuc getiriliyor
+2022-12-29 15:51:27 INFO  Odev1:40 - URL ye gidiliyor
+2022-12-29 15:51:31 INFO  Odev1:43 - Entring weight
+2022-12-29 15:51:32 INFO  Odev1:47 - Selecting kilograms
+2022-12-29 15:51:33 INFO  Odev1:52 - Selecting height in feet
+2022-12-29 15:51:33 INFO  Odev1:57 - Selecting height in inchs
+2022-12-29 15:51:33 INFO  Odev1:62 - Clicking on calculate
+2022-12-29 15:51:34 INFO  Odev1:66 - Sonuc getiriliyor
+2022-12-29 15:51:34 INFO  Odev1:69 - Testimiz gecerli
+2022-12-29 15:51:34 ERROR Odev1:70 - Testimiz gecersiz
+2022-12-29 15:51:34 INFO  Odev1:72 - sonuc getiriliyor
+2022-12-29 15:51:34 INFO  Odev1:78 - Testimiz gecersiz
+2022-12-29 15:51:34 INFO  Odev1:82 - sonuc getiriliyor
+2022-12-29 15:51:34 INFO  Odev1:85 - Testimiz gecerli
+2022-12-29 15:51:34 ERROR Odev1:86 - Testimiz gecersiz
+2022-12-29 15:51:34 INFO  Odev1:88 - sonuc getiriliyor
+2022-12-29 15:51:34 INFO  Odev1:91 - Testimiz gecerli
+2022-12-29 15:51:34 ERROR Odev1:92 - Testimiz gecersiz
+2022-12-29 15:51:34 INFO  Odev1:96 - Testimiz gecerli
+2022-12-29 15:51:34 ERROR Odev1:97 - Testimiz gecersiz
+2022-12-29 15:57:56 INFO  Odev1:40 - URL ye gidiliyor
+2022-12-29 15:58:00 INFO  Odev1:43 - Entring weight
+2022-12-29 15:58:01 INFO  Odev1:47 - Selecting kilograms
+2022-12-29 15:58:01 INFO  Odev1:52 - Selecting height in feet
+2022-12-29 15:58:02 INFO  Odev1:57 - Selecting height in inchs
+2022-12-29 15:58:02 INFO  Odev1:62 - Clicking on calculate
+2022-12-29 15:58:02 INFO  Odev1:66 - Sonuc getiriliyor
+2022-12-29 15:58:02 INFO  Odev1:69 - Testimiz gecerli
+2022-12-29 15:58:02 ERROR Odev1:70 - Testimiz gecersiz
+2022-12-29 15:58:02 INFO  Odev1:72 - sonuc getiriliyor
+2022-12-29 15:58:02 INFO  Odev1:76 - listimiz boş test gecersiz
+2022-12-29 15:58:02 INFO  Odev1:80 - sonuc getiriliyor
+2022-12-29 15:58:02 INFO  Odev1:83 - Testimiz gecerli
+2022-12-29 15:58:02 ERROR Odev1:84 - Testimiz gecersiz
+2022-12-29 15:58:02 INFO  Odev1:86 - sonuc getiriliyor
+2022-12-29 15:58:03 INFO  Odev1:89 - Testimiz gecerli
+2022-12-29 15:58:03 ERROR Odev1:90 - Testimiz gecersiz
+2022-12-29 15:58:03 INFO  Odev1:95 - listemiz bos donuyor
+2023-01-02 19:42:16 INFO  C01_Log4jDemo:57 - email giriliyor
+2023-01-02 19:42:18 ERROR C01_Log4jDemo:60 - listemiz okunamiyor
+2023-01-02 19:47:13 INFO  C01_Log4jDemo:57 - email giriliyor
+2023-01-02 19:47:14 ERROR C01_Log4jDemo:60 - listemiz okunamiyor

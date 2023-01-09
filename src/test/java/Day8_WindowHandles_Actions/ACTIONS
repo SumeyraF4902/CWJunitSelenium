@@ -1,0 +1,52 @@
+/*ACTIONS BIR CLASSDIR  ACTION   İNTERFACE(ARAYUZDUR)
+ACTIONS;
+Kullanıcı web’i keşfederken herhangi bir butona tıklama, metin girme, çift tıklama, sağ tıklama,
+sürükle-bırak, açılır menüden seçim yapma, yeniden boyutlandırma vb. gibi çeşitli işlemler gerçekleştirir.
+• Bu eylemler web uygulamasında Actions Class kullanılarak gerçekleştirilir ve yine bu eylemle Selenium
+Actions kullanılarak otomatikleştirilir.
+• Actions sınıfını kullanarak önce bir dizi bileşik olay oluşturur ve ardından bunu Action
+(tek bir kullanıcı etkileşimini temsil eden bir arabirim- interface) kullanarak gerçekleştiririz
+
+Actions actions = new Actions(driver); — Create action object.
+actions.contextClick(box).perform(); — Perform the action.
+perform(): Bir eylemi yürütür. Bu, bir eylemi gerçekleştirmek için sonunda kullanılmalıdır.
+perform() KULLANMAYI UNUTMAYIN!
+Kullanirsak method calisir yoksa calismazclick(): Geçerli konumu tıklamak için kullanılır.
+doubleClick(): Fare konumuna çift tıklama gerçekleştirmek için kullanılır.
+clickAndHold(): Fare tıklamasını serbest bırakmadan gerçekleştirmek için kullanılır.
+contextClick(): Geçerli fare konumuna sağ fare tıklaması gerçekleştirmek için kullanılır.
+moveToElement (WebElement target): Fare işaretçisini hedef konumun merkezine taşımak için kullanılır.
+dragAndDrop(WebElement source, WebElement target): Öğeyi kaynaktan sürüklemek ve hedef konuma
+bırakmak için kullanılır.
+dragAndDropBy(source, xOffset, yOffset): Geçerli konumu tıklayıp basılı tutmak için verilen ofset değeri ve
+ardından fareyi bırakmak için kullanılır.
+(X = Yatay Kaydır, Y= Dikey Kaydır)
+release(): Geçerli konumdaki sol fare düğmesini serbest bırakmak için kullanılır
+
+sendKeys (): Metin kutusuna, text yazmak için kullanılır.
+keyDown (): Bir tuşu basılı tutmak için kullanılır. Tuşlar Shift, Ctrl ve Alt anlamına gelir.
+keyUp (): keyDown() yönteminden sonra zaten basılmış olan bir tuşu serbest bırakmak için kullanılır yani hedefe
+odaklandıktan sonra tuşu serbest bırakır.
+Keyboard actions 2 parametre alır.,
+
+Actions sınıfını yürütmek ve derlemek için build.perform() yöntemi de kullanılır.
+action.moveToElement(element).build().perform();
+action.moveToElement(element).perform(); → Direkt kodu execute eder.
+
+
+Drag and Drop   YATAYDA SAGA -SOLA KAYDIRMA
+
+ // saga tasima islemleri icin xOffset + olmali, sola tasima islemleri icin xOffset - olmali
+        // Ayni zamanda dikey eksende hareket olmasini engellemek adina yOffset 0 olarak belirlenmelidir
+     KULLANIMI:     actions.dragAndDropBy(slider,-400, 0).perform();
+
+        DİKEYDE YUKARI ASAGI KAYDIRMA
+        // Asagı  tasima islemleri icin yOffset - olmali, yukarı tasima islemleri icin yOffset + olmali
+                // Ayni zamanda sag sola eksende hareket olmasini engellemek adina xOffset 0 olarak belirlenmelidir
+
+               HOVEROVER  -->FAREMIZI ELEMENTIN UZERINE GETIP TIKLIYORUZ
+               Ornek CO5_Actİons  de var
+
+
+               KEYBOARD
+               KEYDOWN = BASILI TUTAR

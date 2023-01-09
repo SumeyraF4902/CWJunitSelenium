@@ -1,0 +1,82 @@
+JS EXECUTORS
+JavascriptExecutor js = (JavascriptExecutor)driver;
+JavascriptExecutor kullanmak için ilk adım olarak driver’ı JavascriptExecutor interface’sine cast etmektir.
+Bu interface sayesinde sayfa kaydırma işlemi ve JavaScript komutları çalıştırılabilir
+En yaygın kullanılan methodu, executescript() methodudur.
+executeScript - ScrollBy () web sayfasını verilen piksel değeri kadar ileri gider.
+
+  executeScript("window.scrollBy(x-piksel,y-piksel)");  ya da js.executeScript("scroll(x,y);");
+            x-piksel x eksenindeki sayıdır, sayı pozitifse sola, sayı negatifse saga hareket eder.
+            y-piksel y eksenindeki sayıdır, sayı pozitifse ise aşağı doğru,sayı negatif ise yukarı doğru hareket eder.
+            js.executeScript("window.scrollBy(0,1000)"); // Dikey olarak 1000 piksel asagi kaydır
+            js.executeScript("window.scrollTo(0, 0)");  // en asagiya gider
+            js.executeScript("window.scrollTo(0, document.body.scrollHeight)"); // en asagiya gider
+                // scrollTo : Verilen pixele gider.
+                // scrollBy : Verilen kadar daha ileri gider.
+           scrollIntoView () web sayfasindaki bir ogenin gorunurlulugune gore kaydirir
+           js.executeScript("arguments[0].scrollIntoView();"  , webelement);
+
+           1-JavascriptExecutor jse=(JavascriptExecutor)driver;
+           2-WebElement cElement =driver.findElement(//locate)
+           3- js.executeScript("arguments[0].scrollıntoView(true);",xElement)
+           4- js.executeScript("arguments[0].click",xElement)
+
+           COOKİES
+           Cookies - çerezler genellikle bir web sitesindeki bir kullanıcının kimliğini tanımak için kullanılır. Basit bir
+           ifadeyle, çerez, bir web uygulamasından gönderilen ve bir tarayıcıda depolanan verilerin bir parçasıdır.
+           Bir kullanıcı bir web sitesine göz attığında, kullanıcı ve favorileri hakkındaki bilgiler, key-value pairs(çiftleri)
+           biçiminde bir tanımlama bilgisi olarak saklanır.
+           Kullanıcı web sitesini tekrar ziyaret ettiğinde, saklanan bilgiler kimlik tespiti için kullanılacaktır.
+
+           driver.manage(). method’u ile cookies’leri handle edebiliriz.
+
+           .getCookies()---> Listeleyebilir.
+          .getCookieNamed--> İsim ile çağırabilir.
+           .addCookie-->Yeni cookies’leri ekleyebilir.
+           .deleteCookiesNamed()-->Var olanlar cookies’leri ismi ile silebilir.
+           .deleteCookie-->Varolanı ismiyle silebilir.
+          .deleteAllCookies()--> Tüm cookies’leri silebilir.
+
+          FİLES
+
+          Selenium ile windows uygulamalarını test edemiyoruz.
+          Ama test etmek için JAVA kullanabiliriz.
+          Bilgisayarımızda bir dosya olup olmadığını(exist) kontrol
+          etmek için Java'yı kullanabiliriz
+          System.getProperty ("user.dir"); İçinde bulunulan      klasörün yolunu (path) verir.
+          System.getProperty ("user.home"); Bilgisayarımızda  bulunan user klasörünü verir.
+          Files.exists (Paths.get (filePath)); Bilgisayarınızda  dosyanın olup olmadığını kontrol eder.
+
+          ROBOT CLASS
+          Robot Sınıfı: Selenium komut dosyalarında, tarayıcı ve masaüstü açılır pencerelerini otomatikleştirmek için Robot
+          classını kullanırız .
+          Genellikle tarayıcılara/tarayıcılardan dosya yükleme/indirme işlemlerinde kullanılır. Fare ve klavye işlemlerini
+          gerçekleştirmek için Robot classını kullanıyoruz. Robot class otomasyon süreci ile kullanımı çok kolaydır. Java
+          otomasyon frameworkleri ile kolayca entegre edilebilir.
+          Selenium, pencere tabanlı açılır pencereleri (açılır pencereleri indir, açılır pencereleri yükle gibi) işlemek için destek
+          sağlamaz. Windows iletişim kutusuyla etkileşim, Selenium’da bir sınırlamadır. Bir web öğesi üzerinde herhangi bir
+          işlem gerçekleştirmek için öğe için bir konumlandırıcıya ihtiyacımız vardır. Ancak Windows açılır pencereleri, web
+          sayfasının bir parçası olmadıkları için herhangi bir konum belirleyiciye sahip değildir, bunlar yerel işletim sistemi açılır
+          pencereleridir. İşte bu tür açılır pencereleri işlemek için Robot Class kavramını kullanabiliriz.
+          Actions class bir fareyi simüle eder. Fare imlecini hareket ettirmez.
+          Oysa Robot class, Selenium'un gerçek bir fare kullanmasını sağlar.
+          METHODLARI
+          keyPress(): Belirli bir tuşa basar.
+          • keyRelease(): Belirli bir klavye tuşunu serbest bırakır.
+          • mousePress(): Girilen değere göre fare düğmesine basar.
+          • mousePress(1): Birincil tuşa basar.
+          • mousePress(2): İkincil tuşa basar.
+          • mouseRelease(): Fare düğmesini serbest bırakır.
+          • mouseMove(): Fare işaretçisini verilen ekran koordinatlarına taşır.
+          • mouseWheel(): Verilen değer negatif ise aşağı kaydırılır, pozitif değer çarkı yukarı kaydırılırsa fareyi kaydırır.
+          DEZAVANTAJLARI
+          Pop-up'lara izin verilmezse veya istemci bilgisayarda dosya indirme yetkisi verilmezse robot sınıfı başarısız
+          olabilir.
+          • Robot sınıfı Gerçek fare komutlarını yürüttüğü için paralel çalıştırmadan kaçınılmalıdır, bu nedenle bir
+          bilgisayarda iki fare olamaz.
+          • keyPress olayını kullandığınızda keyRelease olayını da kullanmalısınız. keyRelease'i kullanamıyorsanız,
+          basılı kalacak ve arka planda bellek tüketecektir. Bu en büyük dezavantajdır.
+
+
+          FILES
+          Boolean isPresent = driver.findElements().size() > 0  kullan axception atmaz  0 verir
